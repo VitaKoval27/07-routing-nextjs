@@ -14,7 +14,7 @@ export interface FetchNotesProps {
   perPage: number;
 }
 
-export interface NoteFormData {
+export interface NoteData {
   title: string;
   content: string;
   tag: NoteTag;
@@ -49,7 +49,7 @@ export async function getSingleNote(id: string): Promise<Note> {
   return res.data;
 }
 
-export async function createNote(data: NoteFormData): Promise<Note> {
+export async function createNote(data: NoteData): Promise<Note> {
   const res = await axios.post<Note>("/notes", data);
   return res.data;
 }
