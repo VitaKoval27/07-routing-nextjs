@@ -1,12 +1,12 @@
 type Props = {
     children: React.ReactNode,
-    sideBar?: React.ReactNode
+    sidebar?: React.ReactNode
 }
 
-export default function LayoutNote({ children, sideBar }: Props) {
+export default function LayoutNote({ children, sidebar }: Props) {
     return (
         <div>
-            <aside>{sideBar}</aside>
+            <aside>{sidebar}</aside>
             <div>{children}</div>
         </div>
     )

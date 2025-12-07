@@ -30,13 +30,13 @@ export async function fetchNotes(options: FetchNotesProps): Promise<FetchNotesRe
 
  const { page, perPage, tag, search } = options; 
 
- 
+ const finalSearch = search || undefined;
  const finalTag = tag === "All" || tag === "" ? undefined : tag;
 
  const params = {
  page,
  perPage,
- ...(search && { search}), 
+ ...(finalSearch && {search: finalSearch}), 
  ...(finalTag && {tag: finalTag}), };
 
 
