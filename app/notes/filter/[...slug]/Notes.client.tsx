@@ -15,18 +15,13 @@ import { fetchNotes } from "@/lib/api";
 import css from "./Notes.module.css";
 
 interface NotesClientProps {
-    initialQuery: string;
-    initialPage: number;
     tag?: string;
 }
 
-export default function NotesClient({
-    initialQuery,
-    initialPage,
-    tag
-}: NotesClientProps) {
-    const [query, setQuery] = useState<string>(initialQuery);
-    const [page, setPage] = useState<number>(initialPage);
+export default function NotesClient({ tag }: NotesClientProps) {
+
+    const [query, setQuery] = useState<string>('');
+    const [page, setPage] = useState<number>(1);
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
     const {
@@ -41,7 +36,7 @@ export default function NotesClient({
             search: query,
             page,
             perPage: 12,
-            tag: tag
+            tag
         }),
         placeholderData: (previousData) => previousData,
         refetchOnMount: false,
