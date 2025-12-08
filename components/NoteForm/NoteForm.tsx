@@ -37,7 +37,7 @@ export default function NoteForm({ onClose }: NoteFormProps) {
   };
 
   return (
-    <Modal onClose={onClose}>
+  
       <Formik
         initialValues={{ title: '', content: '', tag: 'Todo' }}
         validationSchema={NoteSchema}
@@ -93,6 +93,6 @@ export default function NoteForm({ onClose }: NoteFormProps) {
           </div>
         </Form>
       </Formik>
-    </Modal>
+ 
   );
 }
