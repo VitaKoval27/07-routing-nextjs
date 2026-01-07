@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Routing & Navigation (HW-07) 🚀
 
-## Getting Started
+A React-based web application built with the **Next.js** framework to master file-based routing, dynamic paths, and navigation patterns.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 📝 Project Overview
+This project demonstrates the core strengths of Next.js, specifically its routing capabilities. It covers how to build a multi-page application with smooth transitions, dynamic data fetching, and optimized performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🛠 Tech Stack
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=flat-square&logo=cssmodules&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🔑 Key Implementations:
+- **File-based Routing:** Leveraged the Next.js directory structure to create clean, intuitive URL paths.
+- **Dynamic Routes:** Implemented dynamic segments (e.g., `[id]`) to render content based on parameters.
+- **Navigation UI:** Built a responsive Navigation bar using the `<Link>` component for client-side transitions without page reloads.
+- **SEO Optimization:** Used Next.js built-in features to manage metadata for better search engine visibility.
+- **Component Architecture:** Structured the project into reusable UI components for scalability and clean code.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### 🚀 Learning Objectives
+* Understanding the difference between **Server-side Rendering (SSR)** and **Static Site Generation (SSG)**.
+* Mastering the `useRouter` hook and programmatic navigation.
+* Implementing active link styling and layout persistence.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🛠 Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/VitaKoval27/07-routing-nextjs.git](https://github.com/VitaKoval27/07-routing-nextjs.git)
